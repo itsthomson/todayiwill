@@ -514,3 +514,22 @@ Processing PostsController#index (for ::1 at 2010-04-04 19:58:51) [GET]
 Rendering template within layouts/posts
 Rendering posts/index
 Completed in 57ms (View: 52, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for ::1 at 2010-04-04 20:06:37) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-04 20:06:39) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for ::1 at 2010-04-04 20:07:07) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/posts]
