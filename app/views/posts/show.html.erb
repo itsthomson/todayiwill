@@ -1,17 +1,13 @@
 <p>
-  <b>Name:</b>
-  <%=h @post.name %>
+  My name is <b><%=h @post.name %></b>, and
 </p>
 
 <p>
-  <b>Message:</b>
-  <%=h @post.message %>
+  today, I will <%=h @post.message %>
 </p>
 
 <p>
-  <b>Created:</b><br/>
   <%=h @post.created_at.to_s(:long_ordinal) %><br />
-  <%=h time_ago_in_words(@post.created_at) %> ago<br />
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
