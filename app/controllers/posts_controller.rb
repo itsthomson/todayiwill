@@ -10,6 +10,9 @@ class PostsController < ApplicationController
     end
   end
 
+  # GET /posts/admin
+  # GET /posts/admin.xml
+  
   def admin
     @posts = Post.all
 
