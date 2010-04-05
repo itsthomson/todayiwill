@@ -2,7 +2,7 @@ class CreatePosts < ActiveRecord::Migration
   def self.up
     create_table :posts do |t|
       t.string :name
-      t.text :message
+      t.string :message
       t.timestamps
     end
   end
