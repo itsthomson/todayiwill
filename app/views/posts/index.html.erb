@@ -3,14 +3,12 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Date</th>
     <th>Message</th>
   </tr>
 
 <% @posts.each do |post| %>
   <tr>
     <td><%=h post.name %></td>
-    <td><%=h post.date %></td>
     <td><%=h post.message %></td>
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
