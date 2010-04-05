@@ -93,3 +93,103 @@ Processing PostsController#new (for ::1 at 2010-04-04 19:08:44) [GET]
 Rendering template within layouts/posts
 Rendering posts/new
 Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100405020356)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+
+
+Processing HomeController#index (for ::1 at 2010-04-04 19:15:52) [GET]
+Rendering home/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for ::1 at 2010-04-04 19:15:53) [GET]
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for ::1 at 2010-04-04 19:15:55) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for ::1 at 2010-04-04 19:15:58) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"name"=>"test", "message"=>"test"}, "authenticity_token"=>"tn9336mV2pPSRNGiXTamxU73sXnu2zx1ei7GiANX0AY="}
+  [4;35;1mPost Create (0.6ms)[0m   [0mINSERT INTO "posts" ("name", "created_at", "updated_at", "date", "message") VALUES('test', '2010-04-05 02:15:58', '2010-04-05 02:15:58', NULL, 'test')[0m
+Redirected to http://localhost:3000/posts/2
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:15:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#edit (for ::1 at 2010-04-04 19:16:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/posts/2/edit]
+
+
+Processing PostsController#index (for ::1 at 2010-04-04 19:16:03) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for ::1 at 2010-04-04 19:16:05) [DELETE]
+  Parameters: {"authenticity_token"=>"tn9336mV2pPSRNGiXTamxU73sXnu2zx1ei7GiANX0AY=", "id"=>"2"}
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+  [4;36;1mPost Destroy (0.3ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/posts
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/posts/2]
+
+
+Processing PostsController#index (for ::1 at 2010-04-04 19:16:05) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for ::1 at 2010-04-04 19:16:30) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:16:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#index to xml (for ::1 at 2010-04-04 19:17:10) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Completed in 140ms (View: 134, DB: 1) | 200 OK [http://localhost/posts.xml]
