@@ -8,6 +8,11 @@
   <%=h @post.message %>
 </p>
 
+<p>
+  <b>Created:</b>
+  <%=h @post.created_at.to_s(:long_ordinal) %><br />
+  <%=h time_ago_in_words(@post.created_at) %> ago<br />
+</p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

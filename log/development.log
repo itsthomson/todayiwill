@@ -193,3 +193,184 @@ Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/posts/1]
 Processing PostsController#index to xml (for ::1 at 2010-04-04 19:17:10) [GET]
   [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
 Completed in 140ms (View: 134, DB: 1) | 200 OK [http://localhost/posts.xml]
+
+
+Processing PostsController#index to xml (for ::1 at 2010-04-04 19:20:31) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" [0m
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/posts.xml]
+
+
+Processing PostsController#index to xml (for ::1 at 2010-04-04 19:20:52) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/posts.xml]
+
+
+Processing HomeController#index (for ::1 at 2010-04-04 19:24:35) [GET]
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for ::1 at 2010-04-04 19:24:36) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#edit (for ::1 at 2010-04-04 19:24:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/posts/1/edit]
+
+
+Processing PostsController#index to xml (for ::1 at 2010-04-04 19:24:47) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" [0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/posts.xml]
+
+
+Processing PostsController#edit (for ::1 at 2010-04-04 19:24:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/posts/1/edit]
+
+
+Processing PostsController#index (for ::1 at 2010-04-04 19:25:23) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for ::1 at 2010-04-04 19:25:24) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for ::1 at 2010-04-04 19:25:27) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"name"=>"test", "message"=>"test2"}, "authenticity_token"=>"tn9336mV2pPSRNGiXTamxU73sXnu2zx1ei7GiANX0AY="}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("name", "created_at", "updated_at", "date", "message") VALUES('test', '2010-04-05 02:25:27', '2010-04-05 02:25:27', NULL, 'test2')[0m
+Redirected to http://localhost:3000/posts/3
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:25:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing PostsController#edit (for ::1 at 2010-04-04 19:25:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/posts/3/edit]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:25:47) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=2):
+  app/controllers/posts_controller.rb:16:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:25:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing PostsController#index (for ::1 at 2010-04-04 19:25:53) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index to xml (for ::1 at 2010-04-04 19:25:58) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/posts.xml]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:26:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing HomeController#index (for ::1 at 2010-04-04 19:28:13) [GET]
+Rendering home/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for ::1 at 2010-04-04 19:28:15) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:28:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 56ms (View: 51, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:29:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:29:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:29:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing PostsController#show (for ::1 at 2010-04-04 19:31:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/posts/3]
