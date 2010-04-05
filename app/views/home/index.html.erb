@@ -4,9 +4,14 @@
                   <td id="centerCell" align=center> 
                     <div id="main">
                         Today, I will 
-                    
-                    
-                    
+						<table>
+						<% @posts.each do |post| %>
+						  <tr>
+						    <td>...<%=h post.message %></td>
+						    <td>   --<%=h post.name %></td>
+						  </tr>
+						<% end %>
+						</table>
                     </div> 
                     
                     <div id="credit">
