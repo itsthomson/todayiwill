@@ -2,8 +2,10 @@
 Today, I will <%=h @post.message %>
 </p>
 
-<p><%=h @post.name %>, 
-  <%=h @post.created_at.to_s(:long_ordinal) %><br />
+<p>--<%=h @post.name %></p>
+
+<p>
+<%=h @post.created_at.to_s(:long_ordinal) %><br />
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
