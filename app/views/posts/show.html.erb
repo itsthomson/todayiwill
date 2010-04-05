@@ -1,9 +1,13 @@
 <p>
-  My name is <b><%=h @post.name %></b>, and
+  My name is <b><%=h @post.name %></b> and
   today, I will <%=h @post.message %>
 </p>
 
 <p>
+Today, I will <%=h @post.message %>
+</p>
+
+<p><%=h @post.name %>, 
   <%=h @post.created_at.to_s(:long_ordinal) %><br />
 </p>
 
