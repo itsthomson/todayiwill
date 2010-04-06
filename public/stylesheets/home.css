@@ -1,9 +1,11 @@
 body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
+  font-family: "Gotham", "Helvetica Neue", "Bitstream Vera Sans", Arial, sans-serif;
+  font-size:   24px;
+  line-height: 30px;
+  background-color: #000;
+  color: #fff;
 }
 
 pre {
@@ -12,9 +14,9 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+a { text-decoration:none; color: #000; }
+a:visited { text-decoration:none; color: #666; }
+a:hover { text-decoration:none; color: #333; }
 
 .fieldWithErrors {
   padding: 2px;
