@@ -1,5 +1,5 @@
 <div class="grahamcrackers">
-       <p><%h num = rand(@posts.length) %>
+       <p><% num = rand(@posts.length) %>
        Today, I will <%=h @posts[num].message %></p>
        <p class="attribution">
        -- <%=h @posts[num].name %>, <%=h @posts[num].created_at.strftime("%B %d, %Y") %>  (&#35;<%=h num+1%>)</p>
