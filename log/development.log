@@ -4871,3 +4871,93 @@ Processing PostsController#show (for ::1 at 2010-04-06 04:24:05) [GET]
 Rendering template within layouts/posts
 Rendering posts/show
 Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 14:08:18) [GET]
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #8 of app/views/home/index.html.erb:
+5:   <p class="attribution">
+6:     -- <%=h @featured_post.name %>,
+7:     <%=h @featured_post.created_at.strftime("%B %d, %Y") %>
+8:     <%= link_to "(&#35;" + @featured_post.id + ")", @featured_post %>
+9:   </p>
+10:   <p class="small">
+11:     <%= link_to "(What are you going to do today?)", new_post_path %>
+
+    app/views/home/index.html.erb:8:in `+'
+    app/views/home/index.html.erb:8
+    app/controllers/home_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (123.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 14:08:40) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PostsController#show (for ::1 at 2010-04-06 14:08:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#show (for ::1 at 2010-04-06 14:08:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 14:08:49) [GET]
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 14:08:50) [GET]
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PostsController#show (for ::1 at 2010-04-06 14:08:52) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 8) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/8]
+
+
+Processing PostsController#show (for ::1 at 2010-04-06 14:08:53) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 8) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/8]
