@@ -2,8 +2,7 @@ class HomeController < ApplicationController
   def index
      @posts = Post.all
 
-     num = rand(@posts.length)
-     @featured_post = @posts[num]
+     @featured_post = Post.random_post
 
       respond_to do |format|
         format.html # index.html.erb
