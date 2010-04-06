@@ -1,8 +1,7 @@
 <div class="grahamcrackers">
-     <div class="marshmallows">
        <p><%h num = rand(@posts.length) %>
-       Today, I will <%= link_to @posts[num].message, @posts[num] %><br/> 
-       -- <%= @posts[num].name %>, <%=h @posts[num].created_at.strftime("%B %d, %Y") %>
-      <br/><br/><br/><%= link_to "Make a post", new_post_path %></p>
-     </div>
+       Today, I will <%= link_to @posts[num].message, @posts[num] %></p>
+       <p class="attribution">
+       -- <%= @posts[num].name %>, <%=h @posts[num].created_at.strftime("%B %d, %Y") %></p>
+      <p class="small"><%= link_to "(Make a post)", new_post_path %></p>
 </div>
