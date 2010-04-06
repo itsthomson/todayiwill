@@ -4842,3 +4842,32 @@ Processing HomeController#index (for ::1 at 2010-04-06 04:15:55) [GET]
 Rendering template within layouts/home
 Rendering home/index
 Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:23:14) [GET]
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for ::1 at 2010-04-06 04:23:16) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for ::1 at 2010-04-06 04:24:03) [GET]
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for ::1 at 2010-04-06 04:24:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/1]

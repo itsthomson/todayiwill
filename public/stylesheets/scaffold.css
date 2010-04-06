@@ -1,6 +1,6 @@
 body { background-color: #fff; color: #333; }
 
-body, p, ol, ul, td {
+body, ol, ul, td {
   font-family:  "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", "Bitstream Vera Sans", Arial, sans-serif;
 
   font-size:   18px;
@@ -20,6 +20,9 @@ a { text-decoration:none; color: #999; }
 a:visited { text-decoration:none; color: #666; }
 a:hover { text-decoration:none; color: #333; }
 
+p {
+  font-size: 36px;
+}
 .grahamcrackers {
     width: 70%;
     height: 100%;
