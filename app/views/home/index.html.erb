@@ -3,16 +3,9 @@
                 <table width=90% border=0>
                   <td id="centerCell" align=center> 
                     <div id="main">
-                        Today, I will
-
-						<table>
-						<% @posts.each do |post| %>
-						  <tr>
-						    <td>...<%=h post.message %></td>
-						    <td>   --<%=h post.name %></td>
-						  </tr>
-						<% end %>
-						</table>
+                    <%h num = rand(@posts.length) %>
+                        Today, I will <%=h @posts[num].message %><br/> 
+                    -- <%=h @posts[num].name %>
                     </div> 
                     
                     <div id="credit">
@@ -23,5 +16,5 @@
 </table> 
 
 <center>
-<%= link_to "View posts", posts_path %> <%= link_to "Make a post", new_post_path %> 
+<%= link_to "Make a post", new_post_path %> 
 </center>

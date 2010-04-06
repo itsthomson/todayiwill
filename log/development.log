@@ -550,3 +550,918 @@ Migrating to CreatePosts (20100405020356)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:11:11) [GET]
+  [4;36;1mPost Load (2.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 38ms (View: 28, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:11:12) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:12:18) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:12:43) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:12:44) [GET]
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:12:44) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for ::1 at 2010-04-06 01:13:39) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 70ms (View: 65, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:14:47) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:14:55) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:15:45) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:15:49) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:15:54) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:15:57) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:21:11) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+ERROR: compiling _run_erb_app47views47home47index46html46erb RAISED compile error
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:10: syntax error, unexpected '<'
+                    <div id="credit">
+                     ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:11: syntax error, unexpected '<'
+                    </div>
+                     ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:12: unknown regexp options - td
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:13: syntax error, unexpected '<'
+                </table> 
+                 ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:14: unknown regexp options - td
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:15: syntax error, unexpected '<'
+</table> 
+ ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:18: unknown regexp options - ctr
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:18: syntax error, unexpected $undefined
+...t_buffer.concat " \n</center>\n"
+                              ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:18: unterminated string meets end of file
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:18: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47home47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table width=100% height=100%> \n        <td valign=middle align=center> \n                <table width=90% border=0>\n                  <td id=\"centerCell\" align=center> \n                    <div id=\"main\">\n                        Today, I will "
+
+
+
+
+; @output_buffer.concat((h @posts.rand.message ).to_s); @output_buffer.concat "<br/> \n                    -- "
+; h @posts[1].
+                    </div> 
+                    
+                    <div id="credit">
+                    </div>
+                  </td>
+                </table> 
+        </td> 
+</table> 
+
+<center>
+<%= link_to "View posts", posts_path ; @output_buffer.concat " "; @output_buffer.concat(( link_to "Make a post", new_post_path ).to_s); @output_buffer.concat " \n</center>\n"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:18:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/thomsonnguyen/Desktop/todayiwill/app/controllers/home_controller.rb:5:in `index'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:10: syntax error, unexpected '<'
+                    <div id="credit">
+                     ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:11: syntax error, unexpected '<'
+                    </div>
+                     ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:12: unknown regexp options - td
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:13: syntax error, unexpected '<'
+                </table> 
+                 ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:14: unknown regexp options - td
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:15: syntax error, unexpected '<'
+</table> 
+ ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:18: unknown regexp options - ctr
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:18: syntax error, unexpected $undefined
+...t_buffer.concat " \n</center>\n"
+                              ^
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:18: unterminated string meets end of file
+/Users/thomsonnguyen/Desktop/todayiwill/app/views/home/index.html.erb:18: syntax error, unexpected $end, expecting kEND) on line #10 of app/views/home/index.html.erb:
+7:                     -- <%h @posts[1].
+8:                     </div> 
+9:                     
+10:                     <div id="credit">
+11:                     </div>
+12:                   </td>
+13:                 </table> 
+
+    app/views/home/index.html.erb:18:in `compile!'
+    app/controllers/home_controller.rb:5:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (100.7ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:21:49) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:21:50) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:21:50) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:21:51) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:21:51) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:21:52) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:21:52) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:21:52) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:15) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:16) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:44) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:45) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 56ms (View: 51, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:45) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:45) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:46) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:56) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:56) [GET]
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:57) [GET]
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:57) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:57) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:58) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:58) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:58) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:22:59) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:23:19) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:23:19) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:23:27) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:23:27) [GET]
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:23:54) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:23:54) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:23:56) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:23:56) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 54ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for ::1 at 2010-04-06 01:24:14) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for ::1 at 2010-04-06 01:24:25) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for ::1 at 2010-04-06 01:24:35) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 39ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:26:29) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:26:51) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+
+ActionView::TemplateError (undefined method `num' for #<Array:0x1234500>) on line #7 of app/views/home/index.html.erb:
+4:                   <td id="centerCell" align=center> 
+5:                     <div id="main">
+6:                     <%=h num = 1 + rand(@posts.length) %>
+7:                         Today, I will <%=h @posts.num.message %><br/> 
+8:                     -- <%=h @posts.num.name %>
+9:                     </div> 
+10:                     
+
+    app/views/home/index.html.erb:7
+    app/controllers/home_controller.rb:5:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:01) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.message) on line #7 of app/views/home/index.html.erb:
+4:                   <td id="centerCell" align=center> 
+5:                     <div id="main">
+6:                     <%=h num = 1 + rand(@posts.length) %>
+7:                         Today, I will <%=h @posts[num].message %><br/> 
+8:                     -- <%=h @posts[num].name %>
+9:                     </div> 
+10:                     
+
+    app/views/home/index.html.erb:7
+    app/controllers/home_controller.rb:5:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (106.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:02) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:03) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.message) on line #7 of app/views/home/index.html.erb:
+4:                   <td id="centerCell" align=center> 
+5:                     <div id="main">
+6:                     <%=h num = 1 + rand(@posts.length) %>
+7:                         Today, I will <%=h @posts[num].message %><br/> 
+8:                     -- <%=h @posts[num].name %>
+9:                     </div> 
+10:                     
+
+    app/views/home/index.html.erb:7
+    app/controllers/home_controller.rb:5:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (102.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:03) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:04) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:04) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.message) on line #7 of app/views/home/index.html.erb:
+4:                   <td id="centerCell" align=center> 
+5:                     <div id="main">
+6:                     <%=h num = 1 + rand(@posts.length) %>
+7:                         Today, I will <%=h @posts[num].message %><br/> 
+8:                     -- <%=h @posts[num].name %>
+9:                     </div> 
+10:                     
+
+    app/views/home/index.html.erb:7
+    app/controllers/home_controller.rb:5:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (101.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:04) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:05) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:05) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.message) on line #7 of app/views/home/index.html.erb:
+4:                   <td id="centerCell" align=center> 
+5:                     <div id="main">
+6:                     <%=h num = 1 + rand(@posts.length) %>
+7:                         Today, I will <%=h @posts[num].message %><br/> 
+8:                     -- <%=h @posts[num].name %>
+9:                     </div> 
+10:                     
+
+    app/views/home/index.html.erb:7
+    app/controllers/home_controller.rb:5:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:14) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:14) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:15) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:15) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:16) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 58ms (View: 54, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:16) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:17) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:18) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:18) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:18) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:19) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:25) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:25) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:26) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:26) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:26) [GET]
+  [4;36;1mPost Load (3.5ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:27) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:27) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:28) [GET]
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:28) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:29) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:29) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:29) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:30) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:30) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:30) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:27:31) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 01:28:11) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/]
