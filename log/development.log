@@ -4608,3 +4608,189 @@ Processing HomeController#index (for ::1 at 2010-04-06 03:29:24) [GET]
 Rendering template within layouts/home
 Rendering home/index
 Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:01:18) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 80ms (View: 74, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:05:17) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `home_wishlist_path' for #<ActionView::Base:0x195cad0>) on line #11 of app/views/home/index.html.erb:
+8: </div>
+9: 
+10: <div class="footer">
+11: <p>by <a href="mailto:thomson@squareheadgroup.com">Thomson Nguyen.</a> <%=h link_to "(To-do)", home_wishlist_path%></p>
+12: </div>
+
+    app/views/home/index.html.erb:11
+    app/controllers/home_controller.rb:5:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.7ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:06:10) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `index_wishlist_path' for #<ActionView::Base:0x2f2a63c>) on line #11 of app/views/home/index.html.erb:
+8: </div>
+9: 
+10: <div class="footer">
+11: <p>by <a href="mailto:thomson@squareheadgroup.com">Thomson Nguyen.</a> <%=h link_to "(To-do)", index_wishlist_path%></p>
+12: </div>
+
+    app/views/home/index.html.erb:11
+    app/controllers/home_controller.rb:5:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:06:10) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `index_wishlist_path' for #<ActionView::Base:0x2dd4698>) on line #11 of app/views/home/index.html.erb:
+8: </div>
+9: 
+10: <div class="footer">
+11: <p>by <a href="mailto:thomson@squareheadgroup.com">Thomson Nguyen.</a> <%=h link_to "(To-do)", index_wishlist_path%></p>
+12: </div>
+
+    app/views/home/index.html.erb:11
+    app/controllers/home_controller.rb:5:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:07:06) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:07:26) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:07:39) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-06 04:07:40) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/wishlist]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:08:31) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-06 04:08:34) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/wishlist]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-06 04:08:35) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/wishlist]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-06 04:10:42) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/wishlist]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-06 04:10:46) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/wishlist]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-06 04:11:50) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/wishlist]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-06 04:12:27) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/wishlist]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-06 04:12:34) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/wishlist]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 04:12:36) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-06 04:12:38) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/wishlist]
