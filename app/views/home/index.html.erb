@@ -5,7 +5,7 @@
   <p class="attribution">
     -- <%=h @featured_post.name %>,
     <%=h @featured_post.created_at.strftime("%B %d, %Y") %>
-    (&#35;<%=h num+1%>)
+    (&#35;<%=h @featured_post.id %>)
   </p>
   <p class="small">
     <%= link_to "(What are you going to do today?)", new_post_path %>
