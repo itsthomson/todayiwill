@@ -1,17 +1,8 @@
-
-        <td valign=middle align=center> 
-                <table width=90% border=0>
-                  <td id="centerCell" align=center> 
-                    <div id="main">
-                    <%h num = rand(@posts.length) %>
-                        Today, I will <%= link_to @posts[num].message, @posts[num] %><br/> 
-                    -- <%= @posts[num].name %>, <%=h @posts[num].created_at.strftime("%B %d, %Y") %>
-                    </div> 
-                  </td>
-                </table> 
-        </td> 
-</table> 
-<br/><br/>
-<center>
-<%= link_to "Make a post", new_post_path %> 
-</center>
+<div class="grahamcrackers">
+     <div class="marshmallows">
+       <p><%h num = rand(@posts.length) %>
+       Today, I will <%= link_to @posts[num].message, @posts[num] %><br/> 
+       -- <%= @posts[num].name %>, <%=h @posts[num].created_at.strftime("%B %d, %Y") %>
+      <br/><br/><br/><%= link_to "Make a post", new_post_path %></p>
+     </div>
+</div>

@@ -18,6 +18,27 @@ a { text-decoration:none; color: #999; }
 a:visited { text-decoration:none; color: #666; }
 a:hover { text-decoration:none; color: #333; }
 
+.grahamcrackers {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.marshmallows {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.marshmallows p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
 .fieldWithErrors {
   padding: 2px;
   background-color: red;
