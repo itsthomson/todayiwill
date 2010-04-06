@@ -1,8 +1,8 @@
 <div class="grahamcrackers">
        <p><%h num = rand(@posts.length) %>
-       Today, I will <%= @posts[num].message %></p>
+       Today, I will <%=h @posts[num].message %></p>
        <p class="attribution">
-       -- <%= @posts[num].name %>, <%=h @posts[num].created_at.strftime("%B %d, %Y") %>  (&#35;<%=h num+1%>)</p>
+       -- <%=h @posts[num].name %>, <%=h @posts[num].created_at.strftime("%B %d, %Y") %>  (&#35;<%=h num+1%>)</p>
       <p class="small"><%= link_to "(What are you going to do today?)", new_post_path %></p>
 
 </div>
