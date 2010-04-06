@@ -22,9 +22,11 @@ a:visited { text-decoration:none; color: #666; }
 a:hover { text-decoration:none; color: #333; }
 
 .grahamcrackers {
-    width: 100%;
+    width: 70%;
     height: 100%;
     margin-top:200px;
+    margin-left:15%;
+    margin-right:15%;
     text-align: center;
 }
 
