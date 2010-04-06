@@ -1,10 +1,14 @@
 body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
+  font-family:  "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", "Bitstream Vera Sans", Arial, sans-serif;
+
+  font-size:   18px;
+  line-height: 38px;
+  background-color: #000;
+  color: #fff;
 }
+
 
 pre {
   background-color: #eee;
@@ -12,9 +16,33 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+a { text-decoration:none; color: #999; }
+a:visited { text-decoration:none; color: #666; }
+a:hover { text-decoration:none; color: #333; }
+
+.grahamcrackers {
+    width: 70%;
+    height: 100%;
+    margin-top:200px;
+    margin-left:15%;
+    margin-right:15%;
+    text-align: center;
+}
+
+.grahamcrackers p{
+    text-align: center;
+}
+
+.grahamcrackers p.small{
+  font-size:18px;
+}
+
+.grahamcrackers p.attribution{
+ font-size:18px;
+ text-align:right;
+ margin-right:10%;
+ margin-top:-40px;
+}
 
 .fieldWithErrors {
   padding: 2px;

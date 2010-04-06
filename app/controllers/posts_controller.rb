@@ -13,16 +13,6 @@ class PostsController < ApplicationController
   # GET /posts/admin
   # GET /posts/admin.xml
   
-  def admin
-    @posts = Post.all
-
-    respond_to do |format|
-      format.html 
-      format.xml { render :xml => @posts }
-      end
-   end
-
-
   # GET /posts/1
   # GET /posts/1.xml
   def show
