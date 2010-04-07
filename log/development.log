@@ -4985,3 +4985,122 @@ Processing HomeController#index (for ::1 at 2010-04-06 16:16:13) [GET]
 Rendering template within layouts/home
 Rendering home/index
 Completed in 89ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-06 21:46:06) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PostsController#new (for ::1 at 2010-04-06 21:46:08) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:46:09) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 100ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:47:16) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:48:08) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:48:28) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:48:47) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:50:16) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for ::1 at 2010-04-06 21:50:50) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:50:51) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:51:01) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for ::1 at 2010-04-06 21:51:04) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:51:07) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:52:16) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"", "message"=>""}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 16ms (View: 6, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for ::1 at 2010-04-06 21:52:24) [POST]
+  Parameters: {"commit"=>"And I will.", "post"=>{"name"=>"Frank", "message"=>"take shrooms."}, "authenticity_token"=>"5+QqDc38jp8a26LmadFxkdW6m6bWjR/xuK7YGK1XrQs="}
+  [4;36;1mPost Create (22.3ms)[0m   [0;1mINSERT INTO "posts" ("name", "created_at", "updated_at", "date", "message") VALUES('Frank', '2010-04-07 04:52:24', '2010-04-07 04:52:24', NULL, 'take shrooms.')[0m
+Redirected to http://localhost:3000/posts/10
+Completed in 33ms (DB: 22) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for ::1 at 2010-04-06 21:52:24) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 10) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/posts/10]
+
+
+Processing PostsController#show (for ::1 at 2010-04-06 21:55:59) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 10) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/10]
