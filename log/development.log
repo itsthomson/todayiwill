@@ -5158,3 +5158,11 @@ Processing HomeController#index (for ::1 at 2010-04-08 01:08:49) [GET]
 Rendering template within layouts/home
 Rendering home/index
 Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing HomeController#index (for ::1 at 2010-04-08 01:11:50) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
