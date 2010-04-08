@@ -5104,3 +5104,57 @@ Processing PostsController#show (for ::1 at 2010-04-06 21:55:59) [GET]
 Rendering template within layouts/posts
 Rendering posts/show
 Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/posts/10]
+
+
+Processing HomeController#index (for ::1 at 2010-04-08 01:04:49) [GET]
+  [4;36;1mPost Load (1.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 902ms (View: 872, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-08 01:05:08) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for ::1 at 2010-04-08 01:05:34) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing WishlistController#index (for ::1 at 2010-04-08 01:08:40) [GET]
+Rendering template within layouts/wishlist
+Rendering wishlist/index
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/wishlist]
+
+
+Processing HomeController#index (for ::1 at 2010-04-08 01:08:45) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
+
+
+Processing PostsController#show (for ::1 at 2010-04-08 01:08:47) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 89ms (View: 83, DB: 0) | 200 OK [http://localhost/posts/4]
+
+
+Processing HomeController#index (for ::1 at 2010-04-08 01:08:49) [GET]
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM "posts" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/home
+Rendering home/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/home]
