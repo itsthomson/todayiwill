@@ -8,12 +8,21 @@
 	<%= link_to 'Go home!', home_index_path %> -->
 </div>
 <div class="footer">
-<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=29ec575a-3367-4f96-a8cc-dfc4e0a431ba&amp;type=website&amp;post_services=email%2Cfacebook%2Ctwitter%2Cgbuzz%2Cmyspace%2Cdigg%2Csms%2Cwindows_live%2Cdelicious%2Cstumbleupon%2Creddit%2Cgoogle_bmarks%2Clinkedin%2Cbebo%2Cybuzz%2Cblogger%2Cyahoo_bmarks%2Cmixx%2Ctechnorati%2Cfriendfeed%2Cpropeller%2Cwordpress%2Cnewsvine&amp;button=false"></script>
-<style type="text/css">
-body {font-family:helvetica,sans-serif;font-size:12px;}
-a.stbar.chicklet img {border:0;height:16px;width:16px;margin-right:3px;vertical-align:middle;}
-a.stbar.chicklet {height:16px;line-height:16px;}
-</style>
+<a id="ck_email" class="stbar chicklet" href="javascript:void(0);"><img src="http://w.sharethis.com/chicklets/email.gif" /></a>
+<a id="ck_facebook" class="stbar chicklet" href="javascript:void(0);"><img src="http://w.sharethis.com/chicklets/facebook.gif" /></a>
+<a id="ck_twitter" class="stbar chicklet" href="javascript:void(0);"><img src="http://w.sharethis.com/chicklets/twitter.gif" /></a>
+<a id="ck_sharethis" class="stbar chicklet" href="javascript:void(0);"><img src="http://w.sharethis.com/chicklets/sharethis.gif" />ShareThis</a>
+<script type="text/javascript">
+        var shared_object = SHARETHIS.addEntry({
+                title: document.title,
+                        url: document.location.href
+                        });
+
+                        shared_object.attachButton(document.getElementById("ck_sharethis"));
+                        shared_object.attachChicklet("email", document.getElementById("ck_email"));
+                        shared_object.attachChicklet("facebook", document.getElementById("ck_facebook"));
+                        shared_object.attachChicklet("twitter", document.getElementById("ck_twitter"));
+                        </script>
 
 <p>
         <%= mail_to "thomson@squareheadgroup.com", "Questions" %>? |
