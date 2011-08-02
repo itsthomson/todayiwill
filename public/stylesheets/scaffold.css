@@ -23,6 +23,23 @@ a:hover { text-decoration:none; color: #333; }
 p {
   font-size: 36px;
 }
+
+.footer{
+  position:fixed;
+  width: 100%;
+  text-align: right;
+  right: 0px;
+  bottom: 0px;
+  padding: 0 10px 0 10px;
+  width: 100%;
+_position: absolute;
+}
+
+.footer p{
+  font-size: 12px;
+  margin-right:5%;
+}
+
 .grahamcrackers {
     width: 70%;
     height: 100%;
@@ -54,8 +71,8 @@ p {
 }
 
 #errorExplanation {
-  width: 400px;
-  border: 2px solid red;
+  width: 500px;
+  border: 1px solid red;
   padding: 7px;
   padding-bottom: 12px;
   margin-bottom: 20px;

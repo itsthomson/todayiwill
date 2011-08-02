@@ -6,9 +6,9 @@
     <td>...<%=h post.message %></td>
     <td>   --<%=h post.name %></td>
     <td><%= link_to 'Show', post %></td>
-   
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Delete', post, :confirm => 'Really?', :method => :delete %></td> 
+  <!--
+  <td><%= link_to 'Delete', post, :confirm => 'Really?', :method => :delete %></td> 
   -->
   </tr>
 <% end %>
@@ -17,3 +17,10 @@
 <br />
 
 <%= link_to 'New post', new_post_path %>
+<div class="footer">
+  <p>
+    <%= mail_to "thomson@squareheadgroup.com", "Questions" %>? |
+	<%= link_to "Github", "http://www.github.com/itsthomson/todayiwill/"%> |
+    <%= link_to "To-do", wishlist_index_path %> 
+  </p>
+</div>

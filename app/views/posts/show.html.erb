@@ -4,7 +4,29 @@
        <p class="attribution">
        -- <%=h @post.name %>, <%=h @post.created_at.strftime("%B %d, %Y") %></p>
      
-	<!-- <%= link_to 'Edit', edit_post_path(@post) %> |-->
-	<%= link_to 'Go home!', home_index_path %>
+	<!-- <%= link_to 'Edit', edit_post_path(@post) %> 
+	<%= link_to 'Go home!', home_index_path %> -->
 </div>
+<div class="footer">
+<p>
+<a id="ck_email" class="stbar chicklet" href="javascript:void(0);"><img src="http://w.sharethis.com/chicklets/email.gif" /></a>
+<a id="ck_facebook" class="stbar chicklet" href="javascript:void(0);"><img src="http://w.sharethis.com/chicklets/facebook.gif" /></a>
+<a id="ck_twitter" class="stbar chicklet" href="javascript:void(0);"><img src="http://w.sharethis.com/chicklets/twitter.gif" /></a>
+<a id="ck_sharethis" class="stbar chicklet" href="javascript:void(0);"><img src="http://w.sharethis.com/chicklets/sharethis.gif" />ShareThis</a>
+<script type="text/javascript">
+        var shared_object = SHARETHIS.addEntry({
+                title: document.title,
+                        url: document.location.href
+                        });
 
+                        shared_object.attachButton(document.getElementById("ck_sharethis"));
+                        shared_object.attachChicklet("email", document.getElementById("ck_email"));
+                        shared_object.attachChicklet("facebook", document.getElementById("ck_facebook"));
+                        shared_object.attachChicklet("twitter", document.getElementById("ck_twitter"));
+                        </script>
+<br/>
+        <%= mail_to "thomson@squareheadgroup.com", "Questions" %>? |
+	<%= link_to "Github", "http://www.github.com/itsthomson/todayiwill/"%> |
+    <%= link_to "Go back", home_index_path %> 
+  </p>
+</div>
