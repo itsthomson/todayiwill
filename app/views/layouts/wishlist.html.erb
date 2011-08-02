@@ -6,11 +6,25 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Wishlist</title>
   <%= stylesheet_link_tag 'home' %>
+  <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'29ec575a-3367-4f96-a8cc-dfc4e0a431ba'});</script>
 </head>
 <body>
 
 
 <%= yield %>
+
+<div class="footer">
+  <p>
+  <span  class='st_twitter_large' ></span><span  class='st_facebook_large' ></span><span  class='st_yahoo_large' ></span><span  class='st_gbuzz_large' ></span><span  class='st_email_large' ></span><span  class='st_sharethis_large' ></span>
+  </p>
+  <p>
+   by <%= mail_to "thomson@cantab.com", "Thomson Nguyen" %>.
+    <br/>
+    <%= mail_to "thomson@cantab.net", "Questions" %>? |
+	<%= link_to "Github", "http://www.github.com/itsthomson/todayiwill/"%> |
+    <%= link_to "To-do", wishlist_index_path %> 
+  </p>
+</div>
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
