@@ -1,20 +1,12 @@
 body { background-color: #fff; color: #333; }
 
+body, ol, ul, td {
+  font-family:  "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", "Bitstream Vera Sans", Arial, sans-serif;
 
-body, p, ol, ul, td {
-  font-family: "HelveticaNeue";
   font-size:   36px;
   line-height: 38px;
   background-color: #000;
   color: #fff;
-}
-
-@font-face {
-  font-family:  HelveticaNeue;
-  src: local("HelveticaNeue-Light"), 
-  local("Helvetica Neue Light"), 
-  local("Helvetica Neue"),
-  url("DistThin.ttf");
 }
 
 pre {
