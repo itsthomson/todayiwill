@@ -5,5 +5,8 @@
        -- <%=h @post.name %>, <%=h @post.created_at.strftime("%B %d, %Y") %></p>
      
 	<!-- <%= link_to 'Edit', edit_post_path(@post) %> 
-	<%= link_to 'Go home!', home_index_path %> -->
+  <%= link_to 'Go home!', home_index_path %> -->
+  <p class="small">
+    <%= link_to "(What are you going to do today?)", new_post_path %>
+  </p>
 </div>
