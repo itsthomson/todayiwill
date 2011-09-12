@@ -7,4 +7,4 @@ Kittiyachavalit](https://github.com/jimmy).
 
 If you ever needed to make today about _just one thing_, then this website is
 for you. It's currently deployed [here](http://theonlydayistoday.com), through
-  [Heroku](http://www.heroku.com)
+  [Heroku](http://www.heroku.com).
