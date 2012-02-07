@@ -14,3 +14,5 @@ for you. It's currently deployed [here](http://theonlydayistoday.com), through
 User tracking
 
 AJAX
+
+Find a way to make everything seamless in transitions
